@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="user-scalable-no">
+  <link rel="stylesheet" href="deps/bootstrap-3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="page-header">
+    <h3>Cordova Sqlite Webworkers</h3>
+  </div>
+  <div class="btn-group-vertical">
+    <button id="delete-records" type="button" class="btn btn-danger btn-lg btn-block">delete all records</button>
+    <button id="clear-display" type="button" class="btn btn-primary btn-lg btn-block">clear output</button>
+    <button id="show-count" type="button" class="btn btn-info btn-lg btn-block">show record count</button>
+    <button id="webworker" type="button" class="btn btn-info btn-lg btn-block">run webworker</button>
+
+    <div id="message" style="padding:10px;">....</div>
+  </div>
+
+  <script src="cordova.js"></script>
+  <script src='aqmain.js'></script>
+  <script src='webworker/SQLitePlugin.js'></script>
+  <script src="deps/jquery-2.2.4.min.js"></script>
+  <script src="deps/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="performance.js"></script>
+</body>
